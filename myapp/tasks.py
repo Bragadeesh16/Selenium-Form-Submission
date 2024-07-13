@@ -10,7 +10,7 @@ def FormSubmiting():
     website = ' https://forms.gle/WT68aV5UnPajeoSc8'
     chromedriver_path = "/home/bragadeesh/Documents/chromedriver-linux64"
     options = webdriver.ChromeOptions()
-    # options.add_argument('--headless')
+    options.add_argument('--headless')
     options.binary_location = chromedriver_path
     driver = webdriver.Chrome(options=options)
     driver.get(website)
