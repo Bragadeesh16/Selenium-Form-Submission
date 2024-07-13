@@ -62,7 +62,7 @@ def Emailsending():
             subject = 'Photo Attachment'
             message = 'confirmation page photo'
             recipient_list = ['tech@themedius.ai','hr@themedius.ai']
-            # recipient_list = ['bragadeesh03294@gmail.com','kara80499@gmail.com']
+            # recipient_list = ['bragadeesh03294@gmail.com','kara80499@gmail.com']  
 
             email = EmailMessage(subject, message, from_email, to=recipient_list)
             email.attach(os.path.basename(photo_path), photo_content, 'image/jpeg')
